@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --primary-color: #ff6a00;
+            --text-color: #333;
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            margin: 0;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        .profile-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-container + .profile-container {
+            margin-top: 30px;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .profile-details p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+        }
+
+        .back-to-home a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Profile 1</h1>
+        <div class="profile-details">
+            <img src="images/Users/profile-picture4.png" alt="Profile 1" class="profile-picture">
+            <p><strong>First Name:</strong> Mohamed Khair</p>
+            <p><strong>Last Name:</strong> Arabi</p>
+            <p><strong>Phone Number:</strong> 538 013 09 48</p>
+            <p><strong>Email:</strong> mohamed.arabi@example.com</p>
+            <p><strong>Delivery Address:</strong> 123 Main St, Istanbul, Turkey</p>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <h1>Profile 2</h1>
+        <div class="profile-details">
+            <img src="images/Users/profile-picture5.png" alt="Profile 2" class="profile-picture">
+            <p><strong>First Name:</strong> Mahmoud</p>
+            <p><strong>Last Name:</strong> Alhammouri</p>
+            <p><strong>Phone Number:</strong> 538 013 09 48</p>
+            <p><strong>Email:</strong> keke_123@example.com</p>
+            <p><strong>Delivery Address:</strong> 123 Main St, California, USA</p>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <h1>Profile 3</h1>
+        <div class="profile-details">
+            <img src="images\Users\profile-picture6.png" alt="Profile 3" class="profile-picture">
+            <p><strong>First Name:</strong> Abderahman</p>
+            <p><strong>Last Name:</strong> Shady</p>
+            <p><strong>Phone Number:</strong> 538 013 09 48</p>
+            <p><strong>Email:</strong> sarah_smith@example.com</p>
+            <p><strong>Delivery Address:</strong> 123 Main St, New York, USA</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="back-to-home">
+            <a href="index.html">Back to Home</a>
+        </div>
+        <p>© 2024 Taipa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

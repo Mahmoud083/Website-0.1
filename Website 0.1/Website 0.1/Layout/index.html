@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            width: 150px;
+            background-color: #007B8A;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #004d61;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 40px;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            width: calc(20% - 10px);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .add-to-basket {
+            background-color: #007B8A;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket:hover {
+            background-color: #004d61;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-item {
+                width: calc(100% - 10px);
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="previous-orders.html">Previous Orders</a></li>
+            <li><a href="favorite-meals.html">Favorite Meals</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li> 
+        </ul>
+    </div>
+    <div class="content">
+        <header>
+            <h1>Welcome to Our Restaurant</h1>
+        </header>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <div class="menu-container">
+                    <!-- Menu items go here -->
+                    <div class="menu-item">
+                        <img src="Layout\Menu Food\item1.jpg" alt="item1.jpg"> 
+                        <h3>Shawerma Arabi</h3>
+                        <p>$12</p>
+                        <button class="add-to-basket" aria-label="Add Shawerma Arabi to basket">Add to Basket</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Layout/Menu Food/item2.jpg" alt="Shawerma Durum">
+                        <h3>Shawerma Durum</h3>
+                        <p>$10</p>
+                        <button class="add-to-basket" aria-label="Add Shawerma Durum to basket">Add to Basket</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Layout/Menu Food/item3.jpg" alt="French Fries">
+                        <h3>French Fries</h3>
+                        <p>$5</p>
+                        <button class="add-to-basket" aria-label="Add Item 3 to basket">Add to Basket</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Layout/Menu Food/item4.jpg" alt="Humus">
+                        <h3>Humus</h3>
+                        <p>$7</p>
+                        <button class="add-to-basket" aria-label="Add Item 4 to basket">Add to Basket</button>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Taipa. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelectorAll('.add-to-basket').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Item added to basket');
+            });
+        });
+    </script>
+</body>
+</html>

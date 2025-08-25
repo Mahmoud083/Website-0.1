@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Orders</title>
+    <style>
+        :root {
+            --background-color: #f0f0f0;
+            --primary-color: #007BFF;
+            --text-color: #333;
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        .orders-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .order-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order-item span {
+            flex-grow: 1; /* Distribute remaining space */
+        }
+
+        .order-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .order-item a:hover {
+            color: #004d61;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .back-to-home a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="orders-container">
+        <h1>Previous Orders</h1>
+        <div class="order-item">
+            <span>Order 1 - $25.00 - July 5, 2024</span>
+            <a href="/details/order1">View Details</a>
+        </div>
+        <div class="order-item">
+            <span>Order 2 - $30.00 - July 6, 2024</span>
+            <a href="/details/order2">View Details</a>
+        </div>
+        <!-- Add more order items as needed -->
+    </div>
+    <footer>
+        <div class="back-to-home">
+            <a href="index.html">Back to Home</a>
+        </div>
+        <p>© 2024 Taipa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

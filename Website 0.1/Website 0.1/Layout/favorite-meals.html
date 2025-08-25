@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Meals</title>
+    <style>
+        :root {
+            --background-color: #f0f0f0;
+            --primary-color: #007BFF;
+            --text-color: #333;
+        }
+
+        body {
+            background-color: var(--background-color);
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .meals-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .meal-category {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 40px 0 20px;
+            text-align: center;
+        }
+
+        .meals-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .meal-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .meal-item:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .back-to-home a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="meals-container">
+        <h1>Favorite Meals</h1>
+        
+        <section class="meal-category" aria-label="Restaurant's Choice">Restaurant's Choice</section>
+        <div class="meals-list">
+            <article class="meal-item">Meal 1</article>
+            <article class="meal-item">Meal 2</article>
+            <!-- Add more restaurant's choice meals as needed -->
+        </div>
+        
+        <section class="meal-category" aria-label="User's Choice">User's Choice</section>
+        <div class="meals-list">
+            <article class="meal-item" tabindex="0">Meal 3</article>
+            <article class="meal-item" tabindex="0">Meal 4</article>
+            <!-- Add more user's choice meals as needed -->
+        </div>
+    </div>
+    
+    <footer>
+        <div class="back-to-home">
+            <a href="index.html">Back to Home</a>
+        </div>
+        <br>
+        <p>© 2024 Taipa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
